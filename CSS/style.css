@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  font-family: Futura, sans-serif;
+}
+
+.logo {
+  width: 45vw;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+}
+h1 {
+  font-size: 120px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../assets/plants.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container {
+  background-color: #354f52;
+  height: 100vh;
+  width: 55vw;
+  position: absolute;
+  right: 0%;
+  text-align: center;
+}
+.write {
+  width: 100%;
+  position: relative;
+}
+input[type="text"] {
+  width: 70%;
+  height: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  font-size: 47px;
+  font-weight: bold;
+  color: white;
+  background: none;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: white;
+}
+::-ms-input-placeholder {
+  color: white;
+}
+
+#enter {
+  -webkit-appearance: none;
+  width: 80px;
+  height: 100%;
+  border: none;
+  font-family: Futura, sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  color: #354f52;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  right: 0%;
+}
+
+hr {
+  background-color: white;
+  border: none;
+  height: 5px;
+}
+
+.options {
+  width: 100%;
+  height: 60%;
+  padding-left: 50px;
+  box-sizing: border-box;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+h2 {
+  font-size: 43px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 55px;
+}
+#delete {
+  -webkit-appearance: none;
+  background-color: white;
+  color: #354f52;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  font-family: Futura, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#runit {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-appearance: none;
+  font-family: Futura, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  padding: 12px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 6px solid white;
+  border-radius: 20px 0px 20px 0px;
+}
+#back {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  font-family: Futura, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  padding: 12px;
+  padding-left: 70px;
+  padding-right: 70px;
+  border: 6px solid white;
+  border-radius: 20px 0px 20px 0px;
+  display: none;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+spam {
+  font-size: 43px;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 1300px) {
+  h1 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  input[type="text"] {
+    text-align: left;
+    width: 80%;
+  }
+  .write {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .logo {
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+  }
+  h1 {
+    font-size: 75px;
+  }
+  .container {
+    width: 100vw;
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  h1 {
+    font-size: 60px;
+  }
+  input[type="text"] {
+    font-size: 22px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 8px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  #runit {
+    font-size: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  spam {
+    font-size: 35px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .options {
+    height: 30%;
+  }
+  spam {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+}
